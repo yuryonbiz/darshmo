@@ -5,8 +5,17 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        heading: ["var(--font-heading)", "sans-serif"],
-        body: ["var(--font-body)", "sans-serif"],
+        heading: ["var(--font-sans)", "sans-serif"],
+        body: ["var(--font-sans)", "sans-serif"],
+      },
+      colors: {
+        bg: "#0A0A0A",
+        surface: "#141414",
+        edge: "#262626",
+        fg: "#F5F0EB",
+        muted: "#9A9590",
+        accent: "#FFFFFF",
+        "accent-dim": "#E5E0DA",
       },
     },
   },

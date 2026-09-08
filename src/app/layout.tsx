@@ -1,28 +1,22 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Plus_Jakarta_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-heading",
-  weight: ["600", "700"],
-});
-
-const plusJakarta = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  variable: "--font-body",
-  weight: ["400", "500"],
+  variable: "--font-sans",
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
-  title: "DARSHMODE - Strength & Mobility Coaching",
-  description: "Personal fitness coaching for people who want to move better and get stronger.",
+  title: "MODE - 1:1 Coaching",
+  description: "1-on-1 coaching for people who train around real life, real injuries, and real schedules.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${spaceGrotesk.variable} ${plusJakarta.variable} font-body bg-[#0A0A0A] text-[#F5F0EB]`}>
+      <body className={`${inter.variable} font-body bg-bg text-fg`}>
         {children}
       </body>
     </html>

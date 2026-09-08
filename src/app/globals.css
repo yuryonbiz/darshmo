@@ -2,19 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --accent: #E8572A;
-  --accent-hover: #D14A22;
-}
-
-.font-heading {
-  font-family: var(--font-heading), sans-serif;
-}
-
-.font-body {
-  font-family: var(--font-body), sans-serif;
-}
-
 @keyframes fade-up {
   from {
     opacity: 0;
@@ -43,4 +30,15 @@
   background-size: 128px 128px;
   pointer-events: none;
   z-index: 0;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.font-heading {
+  font-weight: 700;
 }
